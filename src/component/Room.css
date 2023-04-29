@@ -1,0 +1,817 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #222222;
+}
+
+/* ============== Header ============== */
+/* .header {
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid #dfe6e8;
+} */
+
+.content_top {
+  margin: 0 auto;
+  width: 1120px;
+}
+
+
+/* ================ 숙소 title =============== */
+.title {
+  width: 1120px;
+  height: 86px;
+  padding: 24px 0 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.inner-title {
+  width: 1120px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.inner-title .left {
+  height: 28px;
+  line-height: 28px;
+  color: black;
+  font-size: 14px;
+  float: left;
+  /* display: inline-block; */
+}
+
+.inner-title .left span {
+  font-weight: 500;
+}
+
+.inner-title .left a {
+  color: black;
+  font-weight: 600;
+}
+
+.inner-title .left>img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.inner-title .right {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  margin-left: 200px;
+  overflow: hidden;
+  float: right;
+}
+
+.inner-title .right a {
+  margin-left: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.inner-title .right .share {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+}
+
+.inner-title .right .heart {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 5px 0;
+  vertical-align: middle;
+}
+
+/* ============== 숙소 사진 ================ */
+.picture {
+  width: 1120px;
+  height: 498.19px;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.picture img:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.picture .room1 img {
+  width: 50%;
+  height: 498.19px;
+  float: left;
+}
+
+.picture .rooms {
+  width: 50%;
+  display: inline;
+  overflow: hidden;
+}
+
+.picture .rooms .room2 {
+  width: 25%;
+  height: 249.09px;
+  padding: 0 0 8px 8px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.picture .rooms .room3 {
+  width: 25%;
+  height: 249.09px;
+  padding: 0 0 0 8px;
+  float: left;
+  box-sizing: border-box;
+}
+
+/*========== 사진 밑에 이것저것 정보 =========== */
+/* 아래 속성 적용하면 sticky 안됨 */
+/* .host_reservation_all {
+  overflow: hidden;
+} */
+
+.room_info {
+  width: 1120px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+/*============== 오른쪽 예약 ===============*/
+.reservation_right {
+  width: 33.3333%;
+  float: right;
+  height: 1800px;
+}
+
+.res_box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 48px 0;
+}
+
+.res_innerbox {
+  
+  border: 1px solid #c9ced0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px lightgrey;
+  padding: 24px;
+}
+.res_detail{
+  width: 100%;
+}
+
+/* 가격 및 후기 */
+.cost {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pernight_cost {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.pernight_cost .price {
+  font-size: 22px;
+  font-weight: 600;
+}
+.pernight_cost p {
+  margin-left: 5px;
+}
+
+.review_right{
+  margin-left: 90px;
+}
+.review{
+  font-size: 14px;
+  font-weight: 600;
+}
+.review_right a{
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+
+
+/* 예약 날짜 및 인원 입력 칸 */
+.res_table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.res_table h6 {
+  border: none;
+  font-size: 12px;
+}
+
+.check_in,
+.check_out,
+.total_personnel {
+  float: left;
+}
+
+.check_in {
+  width: 50%;
+  border: 1px solid #717171;
+  border-top-left-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: -1px;
+}
+.check_in, .check_out, .total_personnel div{
+  font-size: 14px;
+}
+.check_out {
+  float: right;
+  width: 50%;
+  border: 1px solid #717171;
+  border-top-right-radius: 8px;
+  border-left: none;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: -1px;
+  
+}
+
+.total_personnel {
+  width: 100%;
+  border: 1px solid #717171;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-sizing: border-box;
+  margin-top: -1px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: inline-block;
+  
+}
+.total_personnel div{
+  display: flex;
+  align-items: center;
+  
+}
+.total_personnel p{
+  float: right;
+  font-size: large;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin-left: 215px;
+}
+
+.reservation_right img {
+  width: 25px;
+  height: 25px;
+}
+
+/* 예약하기 버튼 */
+.res_btn button{
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background-color: #E31C5F;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 숙소 신고하기 */
+.report_room{
+  margin-top: 25px;
+  width: 100%;
+  display: inline-block;
+}
+.flag {
+  
+  text-align: center;
+  
+}
+.flag img{
+  /* 이미지 색상 바꾸기 */
+  filter: opacity(0.5) drop-shadow(0 0 0 #717171);
+  width: 20px;
+  height: 20px;
+}
+.flag a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #717171;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+
+/*================ 왼쪽 부분 시작 ================*/
+.hosting_left {
+  width: 653.33px;
+  float: left;
+}
+
+/*======== 숙소 광고 제목 ========*/
+.hosting_title_box {
+  width: 100%;
+  padding: 48px 0 24px;
+  border-bottom: 0.5px solid #dfe6e8;
+  overflow: hidden;
+}
+
+.hosting_title {
+  width: 581.33px;
+  height: 56px;
+  display: inline-block;
+}
+
+.hosting_title h2 {
+  height: 26px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.hosting_title p {
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.host_btn {
+  border: none;
+  background: local;
+  float: right;
+  box-sizing: border-box;
+}
+
+.host_btn img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+}
+
+.inner-title .left>img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+/*============ 숙소 광고 내용 ============*/
+.hosting_promotion {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #dfe6e8;
+}
+
+.promotion_contents {
+  margin: 0 0 24px;
+  width: 100%;
+  display: inline-block;
+
+}
+
+.promotion_contents img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.promotion_contents_detail {
+  width: 100%;
+  margin-left: 44px;
+}
+
+.promotion_contents_detail h4 {
+  margin-bottom: 4px;
+}
+
+.promotion_contents_detail p {
+  font-size: 14px;
+  color: #717171;
+  overflow: auto;
+}
+
+.promotion_contents3 {
+  margin: 0;
+}
+
+.promotion_contents3 h4 {
+  margin-top: 3px;
+}
+
+/*=========== 에어커버 ============ */
+.protect_res {
+  padding: 32px 0;
+  border-bottom: 1px solid #dfe6e8;
+}
+
+.aircover img {
+  width: 97.5px;
+  height: 26px;
+  margin-bottom: 16px;
+}
+
+.aircover div {
+  margin-bottom: 16px;
+}
+
+.aircover a {
+  font-weight: 600;
+}
+
+/*============ 숙소 설명 =============*/
+.translate {
+  padding: 32px 0;
+}
+
+.translate div {
+  overflow: hidden;
+}
+
+.translate img {
+  width: 23px;
+  height: 23px;
+  float: left;
+}
+
+.translate span {
+  float: left;
+  margin-left: 10px;
+}
+
+.description {
+  border-bottom: 1px solid #dfe6e8;
+  padding-bottom: 48px;
+}
+
+.description a {
+  font-weight: 600;
+}
+
+.description span {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/*=========== 숙박 장소========== */
+.place {
+  padding: 48px 0;
+  border-bottom: 1px solid #dfe6e8;
+}
+
+.place_title {
+  padding-bottom: 24px;
+}
+
+.place_title h2 {
+  font-size: 22px;
+}
+
+.place_outerbox {
+  padding: 0 8px;
+  width: 207px;
+}
+
+.place_innerbox {
+
+  margin: 0;
+  padding: 24px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 20px;
+}
+
+.place_innerbox .bed {
+  margin-bottom: 14px;
+}
+
+.place_innerbox img {
+  width: 30px;
+  height: 30px;
+}
+
+.place_innerbox .bedroom {
+  margin-bottom: 8px;
+}
+
+.place_innerbox h3 {
+  font-size: 16px;
+}
+
+.place_innerbox p {
+  font-size: 14px;
+}
+
+/*=============== 숙소 편의시설 ================ */
+.facility {
+  padding: 48px 0;
+  border-bottom: 1px solid #dfe6e8;
+}
+
+.facility_title {
+  padding-bottom: 24px;
+
+}
+
+.facility_title h2 {
+  font-size: 22px;
+}
+
+.facility_box {
+  margin-bottom: 24px;
+
+}
+
+.facility_content {
+  display: inline;
+  overflow: hidden;
+
+}
+
+.facility_detail {
+  padding-bottom: 16px;
+  overflow: hidden;
+}
+
+.facility_detail img {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.facility_detail p {
+  float: left;
+  margin-left: 15px;
+}
+
+.facility_detail1 {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.facility_detail2 {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+}
+
+.facility_btn {
+  margin-top: 20px;
+  display: inline-block;
+
+
+}
+
+.facility_btn button {
+  padding: 13px 23px;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.facility_btn button:hover {
+  background-color: whitesmoke;
+  transition: 0.18s ease-in-out;
+}
+
+/* ======= content_bottom ========= */
+/* ======= content_bottom ========= */
+/* ======= content_bottom ========= */
+
+.content_bottom {width: 100%; overflow: hidden;}
+
+/* 리뷰 영역 */
+.review_wrap {
+  margin: 0 auto;
+  width: 1120px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.review_score {width: 100%;}
+
+.review_score > .score {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.score2 {margin-top: 10px; margin-bottom: 35px;}
+
+.score3{
+  overflow: hidden;
+  width: 50%;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.score3 .left{
+  float: left;
+}
+.score3 .right{
+  float: right;
+  padding-bottom: 5px;
+}
+
+.score3 > .right > hr {
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.score3 > .right > span{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.review_list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.review_list .review {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.review_info > div > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.review_info > div {
+  display: inline-block;
+}
+
+.review_info > .info {
+  margin-left: 20px;
+}
+
+.review_comment {
+  margin: 5px 0 30px 5px;
+}
+
+.review_btn {
+  background-color: white;
+  border: 1px solid rgb(50, 50, 50);
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.review_btn:hover {background-color: rgb(232, 229, 229);}
+
+.map_wrap {
+  margin: 0 auto;
+  width: 1120px;
+  margin-bottom: 55px;
+}
+
+.review_address {
+  margin-top: 20px;
+  margin-bottom: 55px;
+  font-weight: 600;
+}
+
+.hostInfo_wrap {
+  margin: 0 auto;
+  width: 1120px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.hostInfo {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.hostCall {
+  float: right;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 40px;
+  padding-top: 80px;
+}
+
+.hostCall_btn {
+  background-color: white;
+  border: 1px solid rgb(50, 50, 50);
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hostCall_btn:hover {background-color: rgb(232, 229, 229);}
+
+.rule_wrap {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.rules {
+  width: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.rules .rule1 {
+  float: left;
+  width: 33.3333%;
+  margin: 10px 0;
+  box-sizing: border-box;
+  
+}
+
+.rule_btn {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-top: 1px solid rgb(222, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  padding-bottom: 30px;
+}
+
+.footer-box {width: 1120px; padding-top: 30px;}
+
+.footer-top {overflow: hidden; margin-bottom: 15px;}
+
+.footer-content {float: left;}
+
+.footer-content > ul > li {margin-bottom: 20px;}
+
+.footer-content > ul > li > a {font-weight: 600; font-size: 21px;}
+
+.footer-info {float: right; height:100%;}
+
+.footer-info > div {height: 50%; margin-bottom: 20px;}
+
+.footer-info > div > p {font-size: 19px; font-weight: 600; margin-bottom: 5px;}
+
+.footer-info > div > span {font-size: 15px; color: #777777;}
+
+.footer-info2 {overflow: hidden; margin-top: 30px;}
+
+.footer-wrap {float: left;}
+
+.footer-list {margin-bottom: 15px;}
+
+.footer-list > ul {display: inline;}
+
+.footer-list > ul > li {display: inline-block; padding-right: 20px;}
+
+.footer-list > ul > li > a {font-size: 15px; font-weight: 600;}
+
+.footer-info3 {color: #777777; font-size: 14px; padding-top: 10px;}
+
+
+/* 달력  */
+.calendar_wrap {
+  padding-top: 50px;
+  border-top: 1px solid #dfe6e8;
+  border-top: 1px solid #dfe6e8;
+  height : 300px;
+}

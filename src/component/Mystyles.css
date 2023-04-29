@@ -1,0 +1,88 @@
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    margin:2px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide p {padding-top:10px;}
+  .swiper:first-child p:first-child {border:1px solid red;}
+  
+  .swiper-slide img {
+    
+    display: block;
+    width: 35%;
+    height: 35%;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    /* font-size: var(--swiper-navigation-size); */
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 30px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border:1px solid #6d6d6d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 70%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.filter {
+         position:absolute;
+         top:13px;
+         right:110px;
+      
+         
+         
+        }
+
+.filter_popup {
+    border: 1px solid red;
+    width:100%;
+    height:100%;
+
+            }
+  
+.filter button {
+              background-color: #fff;
+              border:1px solid #c7c7c7;
+              border-radius: 15px;
+              width:100px;
+              height:55px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              
+              }
+.filter button img {vertical-align: middle;}

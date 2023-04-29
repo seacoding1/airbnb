@@ -1,0 +1,20 @@
+.home_container {
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                
+                }
+.home_wrap {position:relative;margin:0.5% 0.75%; cursor: pointer;}
+.home_wrap img {border-radius: 20px;width:270px;height:270px;object-fit: cover;}
+
+
+.like {position:absolute;top:0;right:20px;font-size:30px;cursor: pointer;border:0; background-color:transparent;}
+.like img {margin-top:10px;opacity: 40%;}
+.home_text {margin-top:5px;}
+
+.home_left {float: left;width:220px;}
+.home_left div {margin: 2px 0;}
+.home_left strong {text-overflow: ellipsis;}
+
+.home_text span {float: right;}
